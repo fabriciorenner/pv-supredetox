@@ -1,0 +1,391 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,500&family=Rubik:ital,wght@0,700;0,900;1,700;1,900&display=swap');
+
+/* ============================= ROOT ============================= */
+
+:root {
+    /* = TAMANHO DAS SEÇÕES = */
+    --largura-conteudo-pc: 1000px;
+    --largura-conteudo-tablet: 660px;
+    --largura-conteudo-mobile: 420px;
+    --largura-titulo-pc: 65%;
+    --largura-titulo-tablet: 65%;
+    --largura-titulo-mobile: 100%;
+    /* = FIM TAMANHO DAS SEÇÕES = */
+    
+    /* = DEGRADÊ DAS SECÕES = */
+    --degrade-secao-0: linear-gradient(0deg, #1f6e2f 0%, #164d21 70%);
+    /* = FIM DEGRADÊ DAS SECÕES = */
+
+    /* = DEGRADÊ DAS IMAGENS = */
+    /* = FIM DEGRADÊ DAS IMAGENS = */
+
+    /* = COR DAS SECÕES = */
+    --cor-secao-0: #1f6e2f;
+    --cor-secao-1: #dcecd8;
+    --cor-secao-2: #f7f7f7;
+    --cor-secao-3: #ffffff;
+    --cor-secao-4: #333333;
+    --cor-secao-5: #222222;
+    /* = FIM COR DAS SECÕES = */
+
+    /* = COR DOS TEXTOS = */
+    --cor-texto-0: #1f6e2f;
+    --cor-texto-1: #ffffff;
+    --cor-texto-2: #000000;
+    /* = FIM COR DOS TEXTOS = */
+
+    /* = COR DOS LINKS = */
+    --cor-link-0: #ff0000;
+    --cor-link-1: #2f20ff;
+    --cor-link-2: #dd1a8c;
+    /* = FIM COR DOS LINKS = */
+
+    /* = COR DOS BOTÕES = */
+    --cor-botao-0: #f56524;
+    --cor-botao-1: #f78450;
+    /* = FIM COR DOS BOTÕES = */
+
+    /* = COR DOS ICONES = */
+    --cor-icone-0: #1f6e2f;
+    --cor-icone-1: #ffffff;
+    --cor-icone-2: #000000;
+    /* = FIM COR DOS ICONES = */
+
+    /* = COR DOS DESTAQUES = */
+    --cor-destaque-0: #f56524;
+    /* = FIM COR DOS DESTAQUES = */
+
+    /* = FONTE DOS TÍTULOS = */
+    --font-titulo-0: "Rubik",Sans-serif;
+    /* = FIM FONTE DOS TÍTULOS = */
+
+    /* = FONTE DOS TEXTOS = */
+    --font-texto-0: "Roboto", Sans-serif;
+    /* = FIM FONTE DOS TEXTOS = */
+}
+
+/* ============================= FIM ROOT ============================= */
+
+/* ============================= CONFIGURAÇÕES GLOBAIS ============================= */
+
+/* ======= PC ======= */
+* {
+    margin: 0;
+    margin-block: 0;
+    margin-inline: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: var(--cor-texto-0);
+    font-family: var(--font-titulo-0);
+    font-size: 39px;
+    line-height: 45px;
+    font-weight: 900;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--cor-texto-0);
+    font-family: var(--font-texto-0);
+    font-size: 21px;
+    line-height: 27px;
+    font-weight: 300;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 0;
+}
+
+h3 {
+    text-align: center;
+    color: var(--cor-texto-0);
+    font-family: var(--font-titulo-0);
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 700;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 0;
+}
+
+p {
+    text-align: center;
+    color: var(--cor-texto-0);
+    font-family: var(--font-texto-0);
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 300;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 0;
+}
+
+mark {
+    color: var(--cor-texto-1);
+    background-color: var(--cor-destaque-0);
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+}
+
+b {
+    font-weight: 500;
+}
+
+strong {
+    font-weight: 500;
+}
+
+button {
+    cursor: pointer;
+    text-align: center;
+    font-family: var(--font-titulo-0);
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 700;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 0;
+    fill: var(--cor-icone-1);
+    color: var(--cor-texto-1);
+    background-color: var(--cor-botao-0);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 25%);
+    padding: 15px 20px 15px 20px;
+}
+
+button:hover {
+    background-color: var(--cor-botao-1);
+}
+
+button small {
+    display: block;
+    color: var(--cor-texto-1);
+    font-family: var(--font-texto-0);
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 300;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 0;
+}
+/* ======= FIM PC ======= */
+
+/* ======= TABLET ======= */
+@media (max-width: 1024px) {
+
+    h1 {
+        font-size: 27px;
+        line-height: 33px;
+    }
+
+    h2 {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+}
+/* ======= FIM TABLET ======= */
+
+/* ======= MOBILE ======= */
+@media (max-width: 767px) {
+
+    h1 {
+        font-size: 21px;
+        line-height: 27px;
+    }
+
+    h2 {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+}
+/* ======= FIM MOBILE ======= */
+
+/* ============================= FIM CONFIGURAÇÕES GLOBAIS ============================= */
+
+/* ============================= SEÇÃO PRINCIPAL ============================= */
+
+/* ======= PC ======= */
+.principal {
+    width: 100%;
+    max-width: 100vw;
+    background: var(--degrade-secao-0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
+    padding: 70px 0px 70px 0px;
+}
+
+.principal .largura {
+    width: 100%;
+    max-width: var(--largura-conteudo-pc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 40px;
+    padding: 0px 10px 0px 10px;
+}
+
+.principal .container-titulo {
+    width: 100%;
+    max-width: var(--largura-titulo-pc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.principal h1 {
+    color: var(--cor-texto-1);
+}
+
+.principal h2 {
+    color: var(--cor-texto-1);
+}
+
+.principal .container-bala {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+.principal ul.container-icone {
+    width: 25%;
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.principal ul.container-icone svg {
+    width: 46px;
+    height: 46px;
+    fill: var(--cor-icone-1);
+    display: block;
+}
+
+.principal li.icone-esquerda {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+.principal li.icone-esquerda p {
+    width: auto;
+    color: var(--cor-texto-1);
+    text-align: right;
+}
+
+.principal li.icone-direita {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+.principal li.icone-direita p {
+    width: auto;
+    color: var(--cor-texto-1);
+    text-align: left;
+}
+
+.principal picture.container-imagem {
+    width: 50%;
+    max-width: 50%;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+.principal .imagem {
+    display: block;
+    width: 75%;
+    max-width: 75%;
+}
+
+.principal .container-botao {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 40px;
+}
+
+.principal ul.lista-icone {
+    display: none;
+}
+
+.principal button {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* ======= FIM PC ======= */
+
+/* ======= TABLET ======= */
+@media (max-width: 1024px) {
+    body {display: none;}
+}
+
+/* ============================= FIM SEÇÃO PRINCIPAL ============================= */
