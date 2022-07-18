@@ -385,7 +385,13 @@ button small {
 
 /* ======= TABLET ======= */
 @media (max-width: 1024px) {
-    body {display: none;}
 }
+
+/* ======= FIM TABLET ======= */
+
+/* ======= MOBILE ======= */
+@media (max-width: 767px) {
+}
+/* ======= FIM MOBILE ======= */
 
 /* ============================= FIM SEÇÃO PRINCIPAL ============================= */
